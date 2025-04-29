@@ -1,0 +1,108 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.sidebar h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  color: #e91e63;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+  margin-left: 220px; /* Adjust for sidebar width + padding */
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.stat-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.total-sale {
+  width: 300px;
+}
+
+.form-buttons button {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 10px;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="button"] {
+  background: #666;
+}
+
+.form-buttons button:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: #ff4444;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #00cc00;
+  margin-bottom: 10px;
+}
